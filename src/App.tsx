@@ -1,4 +1,5 @@
 import { AboutUs } from './about/AboutUs'
+import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Contacts from './contacts/Contacts'
 import Metisera from './metisera/Metisera'
@@ -8,6 +9,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <section>
+        <Header />
+      </section>
       <section id="About">
         <AboutUs />
       </section>
