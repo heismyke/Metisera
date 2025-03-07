@@ -27,7 +27,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="w-full bg-white border border-[#C0E8EB] p-2 sm:p-3 md:p-4">
+    <nav className="w-full bg-white border border-[#C0E8EB] p-2 sm:p-3 md:p-4 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with reduced padding and responsive sizing */}
         <a href="/" className="flex items-center">
@@ -61,8 +61,8 @@ const Navbar = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden mt-4">
-          <ul className="flex flex-col space-y-4">
+        <div className="md:hidden mt-4 absolute bg-white w-full left-0 border-t border-[#C0E8EB] shadow-md z-50">
+          <ul className="flex flex-col space-y-4 p-4">
             {Links.map((link, index) => (
               <li key={index}>
                 {!link.button ? (
