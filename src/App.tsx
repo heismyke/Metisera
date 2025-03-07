@@ -1,6 +1,6 @@
 import { AboutUs } from './about/AboutUs'
 import Navbar from './components/Navbar'
-import Contacts from './contacts/contacts'
+import Contacts from './contacts/Contacts'
 import Metisera from './metisera/Metisera'
 import Terms from './terms/Terms'
 
