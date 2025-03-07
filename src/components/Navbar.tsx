@@ -19,11 +19,7 @@ const Navbar = () => {
       title: 'Sign Up',
       href: '#SignUp',
       button: (
-        <button
-          className="relative bg-gradient-to-b from-[#c86400] to-[#e47403] text-white shadow-lg p-2 rounded-lg
-                   before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/40 before:via-transparent before:to-transparent
-                   before:rounded-lg before:pointer-events-none hover:shadow-xl"
-        >
+        <button className="relative bg-gradient-to-b from-[#c86400] to-[#e47403] text-white shadow-lg p-2 rounded-lg before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/40 before:via-transparent before:to-transparent before:rounded-lg before:pointer-events-none hover:shadow-xl">
           Get Started
         </button>
       ),
@@ -31,11 +27,14 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="w-full bg-white border border-[#C0E8EB] p-4">
+    <nav className="w-full bg-white border border-[#C0E8EB] p-2 sm:p-3 md:p-4">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <a href="/" className="flex-shrink-0">
-          <h1 className="text-[#EA7929] text-5xl font-bold">
+        {/* Logo with reduced padding and responsive sizing */}
+        <a href="/" className="flex items-center">
+          <div className="w-12 sm:w-14 md:w-16 lg:w-20 flex-shrink-0">
+            <img src="/logo.png" alt="Metisera Logo" className="h-auto w-full object-contain" />
+          </div>
+          <h1 className="text-[#EA7929] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ml-1 sm:ml-2">
             Meti<span className="text-[#2F505A]">sera</span>
           </h1>
         </a>
